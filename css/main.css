@@ -305,11 +305,6 @@ textarea {
   transition: background-color 200ms linear;
 }
 
-.fixed-bottom.scrolled {
-  background-color: darkslategray !important;
-  transition: background-color 200ms linear;
-}
-
 .card {
   animation: fade 4.5s;
 }
@@ -338,4 +333,11 @@ textarea {
   25% { transform: translateY(100%) }
   75% { transform: translateY(0px) }
   100% { transform: translateY(0px) }
+}
+
+@keyframes slideright {
+  0% { transform: translateX(-150%) }
+  25% { transform: translateX(-150%) }
+  75% { transform: translateX(0px) }
+  100% { transform: translateX(0px) }
 }

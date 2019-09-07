@@ -1,13 +1,7 @@
 $(function () {
     $(document).scroll(function () {
       var $nav = $(".fixed-top");
-      $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
+      var $jumbotron = $(".jumbotron");
+      $nav.toggleClass('scrolled', $(this).scrollTop() > $jumbotron.height());
     });
   });
-
-$(function () {
-    $(document).scroll(function () {
-        var $footer = $(".fixed-bottom");
-        $footer.toggleClass('scrolled', $(this).scrollTop() > $footer.height());
-    });
-});
