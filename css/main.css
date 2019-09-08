@@ -272,7 +272,7 @@ textarea {
 
  .jumbotron{
   padding: 17em 100px 350px 100px;
-  background: linear-gradient(180deg, darkslategray, #47b39d);
+  background: linear-gradient(180deg, darkslategray, #47b39d, #ffc153);
   background-size: 400% 400%;
   color: white;
   border-radius: 0%;
