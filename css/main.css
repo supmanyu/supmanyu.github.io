@@ -272,12 +272,12 @@ textarea {
 
  .jumbotron{
   padding: 17em 100px 350px 100px;
-  background: linear-gradient(180deg, darkslategray, #47b39d, #ffc153);
+  background: linear-gradient(180deg, darkslategray, #47b39d, #ffc153, #eb6b56, #b05f6d, #462446);
   background-size: 400% 400%;
   color: white;
   border-radius: 0%;
   animation: fade 4.5s;
-  animation: Gradanimate 8s ease infinite; 
+  animation: Gradanimate 9s ease infinite; 
   -webkit-animation: Gradanimate 8s ease infinite;
  }
 
