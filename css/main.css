@@ -272,12 +272,12 @@ textarea {
 
  .jumbotron{
   width: 100%;
-  padding:300px 0 300px 0 ;
+  padding:275px 0px 0px 0px ;
   background: linear-gradient(180deg, darkslategray, #47b39d, #ffc153, #eb6b56, #b05f6d, #462446);
   background-size: 600% 600%;
   color: white;
   border-radius: 0%;
-  animation: fade 4.5s;
+  animation: fade 5s;
   animation: Gradanimate 9s ease infinite; 
   -webkit-animation: Gradanimate 9s ease infinite;
  }
@@ -288,9 +288,8 @@ textarea {
 }
 .row-content {
   margin: 0px auto;
-  padding: 50px 0px;
-  border-bottom: 1px ridge;
-  min-height: 400px;
+  padding: 280px 0px 15px 0px;
+  text-align: center;
 }
 .footer {
   text-align: center;
@@ -319,6 +318,14 @@ textarea {
 
 .cert-card {
   margin: 5px 0px 5px 0px;
+}
+
+.accordion {
+  background-color: rgb(40, 41, 41);
+}
+
+.card-dark {
+  background-color: rgb(40, 41, 41);
 }
 
 /*Animated Hamburger Menu*/
@@ -408,6 +415,10 @@ textarea {
   -o-transform: rotate(-135deg);
   transform: rotate(-135deg);
   }
+
+  .animate-span{
+    animation: arrowdown 3s ease infinite;
+  }
    
 
 /*Animations*/
@@ -450,4 +461,12 @@ textarea {
     0%{background-position:44% 0%}
     50%{background-position:57% 100%}
     100%{background-position:44% 0%}
+}
+
+@keyframes arrowdown {
+  0%{ transform: translateY(-5px)  }
+  25%{ transform: translateY(5px)  }
+  50%{ transform: translateY(5px) }
+  75%{ transform: translateY(-5px) }
+  100%{ transform: translateY(-5px) }
 }
