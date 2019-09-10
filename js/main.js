@@ -97,7 +97,7 @@ function techcrunch(){
       var headlineContainer = document.getElementById('techCrunch');
       for (var i = 0; i < data.length; i++) {
           var div = document.createElement("div");
-          div.innerHTML = '<h5>Title: '+ data[i].title + '</h5>' + 'Source: '+ data[i].source.name +' ' + '| ' + 'Author: ' + data[i].author +  '<p>Description: ' + data[i].description + '<a href= "' + data[i].url + '">Read more</a>' + '</p>';
+          div.innerHTML = '<h5>'+ (i+1) + '. '+ data[i].title + '</h5>' + '<h6>Source: '+ data[i].source.name +' ' + '| ' + 'Author: ' + data[i].author +  '</h6><p>Description: ' + data[i].description + '<a style="text-decoration: none; color: #e74c3c;" href= "' + data[i].url + '"> Read more</a>' + '</p><hr>';
           headlineContainer.appendChild(div);
       }
   }
@@ -106,7 +106,7 @@ function techcrunch(){
     var headlineContainer = document.getElementById('wired');
     for (var i = 0; i < data.length; i++) {
         var div = document.createElement("div");
-        div.innerHTML = '<h5>Title: '+ data[i].title + '</h5>' + 'Source: '+ data[i].source.name +' '  + '<p>Description: ' + data[i].description + '<a href= "' + data[i].url + '"> Read more</a>' + '</p>';
+        div.innerHTML = '<h5>'+ (i+1) + '. '+ data[i].title + '</h5>' + '<h6>Source: '+ data[i].source.name +' '  + '</h6><p>Description: ' + data[i].description + '<a style="text-decoration: none; color: #e74c3c;" href= "' + data[i].url + '"> Read more</a>' + '</p><hr>';
         headlineContainer.appendChild(div);
     } 
   }
@@ -115,7 +115,7 @@ function techcrunch(){
     var headlineContainer = document.getElementById('verge');
     for (var i = 0; i < data.length; i++) {
         var div = document.createElement("div");
-        div.innerHTML = '<h5>Title: '+ data[i].title + '</h5>' + 'Source: '+ data[i].source.name + ' | '  + 'Author: ' + data[i].author + '<p>Description: ' + data[i].description + '<a href= "' + data[i].url + '"> Read more</a>' + '</p>';
+        div.innerHTML = '<h5>'+ (i+1) + '. '+ data[i].title + '</h5>' + '<h6>Source: '+ data[i].source.name + ' | '  + 'Author: ' + data[i].author + '</h6><p>Description: ' + data[i].description + '<a style="text-decoration: none; color: #e74c3c;" href= "' + data[i].url + '"> Read more</a>' + '</p><hr>';
         headlineContainer.appendChild(div);
     } 
   }
