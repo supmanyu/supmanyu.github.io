@@ -174,8 +174,8 @@ function techcrunch(){
 
     if( d.weather[0].id == 800 ) {
       w_icon.classList.add("sunny");
-      w_icon1.classList.add("sun");
-      w_icon2.classList.add("rays");
+      w_icon2.classList.add("sun");
+      w_icon3.classList.add("rays");
     } 
     else if( d.weather[0].id > 499 && d.weather[0].id <= 531 ) {
       w_icon.classList.add("rainy");
