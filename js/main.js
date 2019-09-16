@@ -125,7 +125,7 @@ function techcrunch(){
   
   function getLocation() {
     if (navigator.geolocation) {
-      navigator.geolocation.getCurrentPosition(weatherApi, showError, {maximumAge: 75000, enableHighAccuracy: true});
+      navigator.geolocation.getCurrentPosition(weatherApi, showError, {maximumAge: 75000, enableHighAccuracy: true, timeout: 10000});
     } else {
       x.innerHTML = "Geolocation is not supported by this browser.";
     }
@@ -165,7 +165,7 @@ function techcrunch(){
     var w_icon3 = document.getElementById('w-icon3');
     var w_icon4 = document.getElementById('w-icon4');
 
-    document.getElementById('description').innerHTML = d.weather[0].description;
+    document.getElementById('description').innerHTML = d.weather[0].description[0].toUpperCase()+d.weather[0].description.slice(1);
     document.getElementById('temp').innerHTML = celcius + "&deg;C / " + fahrenheit + "&deg;F" ;
     document.getElementById('location').innerHTML = d.name + ", "+ d.sys.country;
     document.getElementById('humid').innerHTML = "Humidity: " + d.main.humidity + "%";
