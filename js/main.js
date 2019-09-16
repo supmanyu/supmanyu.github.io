@@ -125,7 +125,7 @@ function techcrunch(){
   
   function getLocation() {
     if (navigator.geolocation) {
-      navigator.geolocation.getCurrentPosition(weatherApi, showError, {maximumAge: Infinity, enableHighAccuracy: true, timeout: 10000});
+      navigator.geolocation.getCurrentPosition(weatherApi, showError, {maximumAge: Infinity, enableHighAccuracy: true, timeout: 50000});
     } else {
       x.innerHTML = "Geolocation is not supported by this browser.";
     }
