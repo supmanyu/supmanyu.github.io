@@ -4,7 +4,7 @@ $(function () {
     $(document).scroll(function () {
       var $nav = $(".fixed-top");
       var $jumbotron = $(".jumbotron");
-      $nav.toggleClass('scrolled', $(this).scrollTop() > $jumbotron.height()/2);
+      $nav.toggleClass('scrolled', $(this).scrollTop() > $jumbotron.height()/3);
     });
   });
 
@@ -125,7 +125,7 @@ function techcrunch(){
   
   function getLocation() {
     if (navigator.geolocation) {
-      navigator.geolocation.getCurrentPosition(weatherApi, showError);
+      navigator.geolocation.getCurrentPosition(weatherApi, showError, {maximumAge: 75000, enableHighAccuracy: true});
     } else {
       x.innerHTML = "Geolocation is not supported by this browser.";
     }

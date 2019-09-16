@@ -1,4 +1,7 @@
 @media screen and (max-width: 1100px){
+  div.jumbotron{
+    padding: 180px 0px 0px 0px;
+  }
   .social-button {
       padding: 5%;
   }
@@ -282,6 +285,7 @@ textarea {
   -webkit-animation: Gradanimate 9s ease infinite;
  }
 
+
  .row-header {
   padding: 0px;
   text-align: center;
@@ -300,15 +304,13 @@ textarea {
 
 .navbar {
   animation: slidein 1.5s;
-}
-
-.nav-item{
-  border-bottom: 0.5px ridge #ffffff;
+  box-shadow: 0px 0px 20px 0px;
 }
 
 .fixed-top.scrolled {
   background-color: rgb(40, 41, 41) !important;
   transition: background-color 500ms linear;
+  border-bottom: 0.5px ridge #000;
 }
 
 .card {
