@@ -125,7 +125,7 @@ function techcrunch(){
   
   function getLocation() {
     if (navigator.geolocation) {
-      navigator.geolocation.getCurrentPosition(weatherApi, showError, {maximumAge: 75000, enableHighAccuracy: true, timeout: 10000});
+      navigator.geolocation.getCurrentPosition(weatherApi, showError, {maximumAge: Infinity, enableHighAccuracy: true, timeout: 10000});
     } else {
       x.innerHTML = "Geolocation is not supported by this browser.";
     }
@@ -149,7 +149,7 @@ function techcrunch(){
       x.innerHTML = "The network is down or the positioning service can't be reached.";
     } 
     else if(error.code == 3) {
-      x.innerHTML = "The attempt timed out before it could get the location data.";
+      x.innerHTML = "The location service timed out before it could get the location data.";
     } 
     else {
       x.innerHTML = "Geolocation failed due to unknown error.";
@@ -169,7 +169,7 @@ function techcrunch(){
     document.getElementById('temp').innerHTML = celcius + "&deg;C / " + fahrenheit + "&deg;F" ;
     document.getElementById('location').innerHTML = d.name + ", "+ d.sys.country;
     document.getElementById('humid').innerHTML = "Humidity: " + d.main.humidity + "%";
-    document.getElementById('wind').innerHTML = "Wind speed: " + d.wind.speed + " m/s";
+    document.getElementById('wind').innerHTML = "Wind speed: " + d.wind.speed + "m/s";
     
 
     if( d.weather[0].id == 800 ) {
