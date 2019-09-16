@@ -302,6 +302,10 @@ textarea {
   animation: slidein 1.5s;
 }
 
+.nav-item{
+  border-bottom: 0.5px ridge #ffffff;
+}
+
 .fixed-top.scrolled {
   background-color: rgb(40, 41, 41) !important;
   transition: background-color 500ms linear;

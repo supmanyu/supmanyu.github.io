@@ -4,7 +4,7 @@ $(function () {
     $(document).scroll(function () {
       var $nav = $(".fixed-top");
       var $jumbotron = $(".jumbotron");
-      $nav.toggleClass('scrolled', $(this).scrollTop() > $jumbotron.height());
+      $nav.toggleClass('scrolled', $(this).scrollTop() > $jumbotron.height()/2);
     });
   });
 
@@ -118,4 +118,80 @@ function techcrunch(){
         div.innerHTML = '<h5>'+ (i+1) + '. '+ data[i].title + '</h5>' + '<h6>Source: '+ data[i].source.name + ' | '  + 'Author: ' + data[i].author + '</h6><p>Description: ' + data[i].description + '<a style="text-decoration: none; color: #e74c3c;" href= "' + data[i].url + '"> Read more</a>' + '</p><hr>';
         headlineContainer.appendChild(div);
     } 
+  }
+
+  //WeatherApi logic
+  var x = document.getElementById("location");
+  
+  function getLocation() {
+    if (navigator.geolocation) {
+      navigator.geolocation.getCurrentPosition(weatherApi, showError);
+    } else {
+      x.innerHTML = "Geolocation is not supported by this browser.";
+    }
+  }
+
+  function weatherApi( position ) {
+    var key = '7f95f9878ea13e1a764a5a30fb963fa2';
+    fetch('https://api.openweathermap.org/data/2.5/weather?lat=' + position.coords.latitude+'&lon='+ position.coords.longitude + '&appid=' + key)  
+    .then(function(resp) { return resp.json() }) // Convert data to json
+    .then(function(data) {
+      console.log(data);
+      weatherData(data);
+    })
+  }
+
+  function showError(error) {
+    if(error.code == 1) {
+      x.innerHTML = "Please provide location access to display weather.";
+    } 
+    else if(error.code == 2) {
+      x.innerHTML = "The network is down or the positioning service can't be reached.";
+    } 
+    else if(error.code == 3) {
+      x.innerHTML = "The attempt timed out before it could get the location data.";
+    } 
+    else {
+      x.innerHTML = "Geolocation failed due to unknown error.";
+    }
+  }
+
+  function weatherData(d){
+    var celcius = Math.round(parseFloat(d.main.temp)-273.15);
+    var fahrenheit = Math.round(((parseFloat(d.main.temp)-273.15)*1.8)+32); 
+    var w_icon = document.getElementById('w-icon');
+    var w_icon1 = document.getElementById('w-icon1');
+    var w_icon2 = document.getElementById('w-icon2');
+    var w_icon3 = document.getElementById('w-icon3');
+    var w_icon4 = document.getElementById('w-icon4');
+
+    document.getElementById('description').innerHTML = d.weather[0].description;
+    document.getElementById('temp').innerHTML = celcius + "&deg;C / " + fahrenheit + "&deg;F" ;
+    document.getElementById('location').innerHTML = d.name + ", "+ d.sys.country;
+    document.getElementById('humid').innerHTML = "Humidity: " + d.main.humidity + "%";
+    document.getElementById('wind').innerHTML = "Wind speed: " + d.wind.speed + " m/s";
+    
+
+    if( d.weather[0].id == 800 ) {
+      w_icon.classList.add("sunny");
+      w_icon1.classList.add("sun");
+      w_icon2.classList.add("rays");
+    } 
+    else if( d.weather[0].id > 499 && d.weather[0].id <= 531 ) {
+      w_icon.classList.add("rainy");
+      w_icon1.classList.add("cloud");
+      w_icon2.classList.add("rain");
+    } 
+    else if( d.weather[0].id > 800 && d.weather[0].id <= 804 ) {
+      w_icon.classList.add("cloudy");
+      w_icon1.classList.add("cloud");
+      w_icon2.classList.add("cloud");
+    }
+    else if( d.weather[0].id > 599 && d.weather[0].id <= 622 ) {
+      w_icon.classList.add("flurries");
+      w_icon1.classList.add("cloud");
+      w_icon2.classList.add("snow");
+      w_icon3.classList.add("flake");
+      w_icon4.classList.add("flake");
+    }
   }
