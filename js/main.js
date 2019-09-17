@@ -4,7 +4,7 @@ $(function () {
     $(document).scroll(function () {
       var $nav = $(".fixed-top");
       var $jumbotron = $(".jumbotron");
-      $nav.toggleClass('scrolled', $(this).scrollTop() > $jumbotron.height()/3);
+      $nav.toggleClass('scrolled', $(this).scrollTop() > $jumbotron.height()/4);
     });
   });
 
@@ -177,12 +177,19 @@ function techcrunch(){
       w_icon2.classList.add("sun");
       w_icon3.classList.add("rays");
     } 
-    else if( d.weather[0].id > 499 && d.weather[0].id <= 531 ) {
+    else if( d.weather[0].id > 199 && d.weather[0].id <= 232 ) {
+      w_icon.classList.add("thunder-storm");
+      w_icon1.classList.add("cloud");
+      w_icon2.classList.add("lightning");
+      w_icon3.classList.add("bolt");
+      w_icon4.classList.add("bolt");
+    } 
+    else if( d.weather[0].id > 299 && d.weather[0].id <= 531 ) {
       w_icon.classList.add("rainy");
       w_icon1.classList.add("cloud");
       w_icon2.classList.add("rain");
     } 
-    else if( d.weather[0].id > 800 && d.weather[0].id <= 804 ) {
+    else if( (d.weather[0].id > 800 && d.weather[0].id <= 804) || (d.weather[0].id > 700 && d.weather[0].id <= 781) ) {
       w_icon.classList.add("cloudy");
       w_icon1.classList.add("cloud");
       w_icon2.classList.add("cloud");
