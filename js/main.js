@@ -145,15 +145,19 @@ function techcrunch(){
 
   function showError(error) {
     if(error.code == 1) {
+      document.getElementById("loader").innerHTML= '';
       x.innerHTML = "Please provide location access to display weather.";
     } 
     else if(error.code == 2) {
+      document.getElementById("loader").innerHTML= '';
       x.innerHTML = "The network is down or the positioning service can't be reached.";
     } 
     else if(error.code == 3) {
+      document.getElementById("loader").innerHTML= '';
       x.innerHTML = "The location service timed out before it could get the location data.";
     } 
     else {
+      document.getElementById("loader").innerHTML= '';
       x.innerHTML = "Geolocation failed due to unknown error.";
     }
   }
