@@ -121,6 +121,8 @@ function techcrunch(){
   }
 
   //WeatherApi logic
+  let loader = '<div class="load-wrapp"><div class="load-6"><div class="letter-holder"><div class="l-1 letter">L</div><div class="l-2 letter">o</div><div class="l-3 letter">a</div><div class="l-4 letter">d</div><div class="l-5 letter">i</div><div class="l-6 letter">n</div><div class="l-7 letter">g</div><div class="l-8 letter">.</div><div class="l-9 letter">.</div><div class="l-10 letter">.</div></div></div>';
+  document.getElementById("loader").innerHTML= loader;
   var x = document.getElementById("location");
   
   function getLocation() {
@@ -164,7 +166,7 @@ function techcrunch(){
     var w_icon2 = document.getElementById('w-icon2');
     var w_icon3 = document.getElementById('w-icon3');
     var w_icon4 = document.getElementById('w-icon4');
-
+    document.getElementById("loader").innerHTML= '';
     document.getElementById('description').innerHTML = d.weather[0].description[0].toUpperCase()+d.weather[0].description.slice(1);
     document.getElementById('temp').innerHTML = celcius + "&deg;C / " + fahrenheit + "&deg;F" ;
     document.getElementById('location').innerHTML = d.name + ", "+ d.sys.country;
