@@ -5,9 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Sahitya Upmanyu - Web Developer Portfolio</title>
+    <!-- Header stylesheets -->
     <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:400,600" rel="stylesheet">
     <link rel="stylesheet" href="dist/css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+    <!-- Header Scripts -->
 	<script src="https://unpkg.com/animejs@3.0.1/lib/anime.min.js"></script>
     <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
 </head>
@@ -21,7 +23,7 @@
                             <p class="hero-paragraph mb-0">Hello There! I'm Sahitya Upmanyu, a</p>
 	                        <h1 class="hero-title mt-0 mb-0">Full Stack Developer</h1>
 	                        <p class="hero-paragraph">Helping businesses connect to the cloud, one website at a time.</p>
-	                        <div class="hero-cta"><a class="button" href="#">Get in touch</a></div>
+	                        <div class="hero-cta"><a class="button" href="javascript:void(0)" onclick="document.getElementById('cta-section').scrollIntoView({ behavior: 'smooth'})">Get in touch</a></div>
 						</div>
 						<div class="hero-figure anime-element">
 							<svg class="placeholder" width="528" height="396" viewBox="0 0 528 396">
@@ -114,8 +116,7 @@
                 <div class="container-sm">
                     <div class="pricing-inner section-inner">
                         <div class="pricing-header text-center">
-                            <h2 class="section-title mt-0">Unlimited for all</h2>
-                            <p class="section-paragraph mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut ad quis nostrud.</p>
+                            <h2 class="section-title mt-0">Certifications</h2>
                         </div>
 						<div class="pricing-tables-wrap">
                             <div class="pricing-table">
@@ -150,10 +151,10 @@
                 </div>
             </section>
 
-			<section class="cta section">
+			<section class="cta section" id="cta-section">
 				<div class="container">
 					<div class="cta-inner section-inner">
-						<h3 class="section-title mt-0">Want to connect?</h3>
+                        <h3 class="section-title mt-0">Want to connect?</h3>
 						<div class="cta-cta">
 							<a class="button button-primary button-wide-mobile" href="#">Get in touch</a>
 						</div>
@@ -165,6 +166,7 @@
         <footer class="site-footer">
             <div class="container">
                 <div class="site-footer-inner">
+                    <div class="footer-brand">Made with &nbsp;<i title="Coffee!" class="fas fa-coffee" style="color: orange;"></i>&nbsp;&&nbsp;<i title="Love!" class="fas fa-heart" style="color: red;"></i></div>
                     <ul class="footer-links list-reset">
                         <li>
                             <a href="#">Contact</a>
@@ -198,7 +200,7 @@
             </div>
         </footer>
     </div>
-
+    <!-- Footer Scripts -->
     <script src="dist/js/main.min.js"></script>
 </body>
 </html>
