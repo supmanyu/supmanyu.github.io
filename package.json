@@ -1,15 +1,15 @@
 {
-  "name": "solid",
+  "name": "supmanyu.github.io",
   "version": "1.0.0",
-  "description": "Solid Template",
-  "author": "Pasquale Vitiello <pasqualevitiello@gmail.com>",
+  "description": "Developer Portfolio",
+  "author": "Sahitya Upmanyu <contact.sahitya@gmail.com>",
   "license": "GPLv3",
   "repository": {
     "type": "git",
-    "url": "https://bitbucket.org/pasqualevitiello/solid.git"
+    "url": "https://github.com/supmanyu/supmanyu.github.io.git"
   },
   "bugs": {
-    "url": "https://bitbucket.org/pasqualevitiello/solid/issues"
+    "url": "https://github.org/supmanyu/supmanyu.github.io/issues"
   },
   "scripts": {
     "clean": "rimraf dist/{css/*,js/*,images/*}",
