@@ -1,0 +1,58 @@
+.modal {
+    opacity: 0;
+    display: none;
+    position: fixed;
+    z-index: 2;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%; 
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgba($color: #3B404C, $alpha: 0.9);
+    transition: all 0.3s cubic-bezier(0.33, 1, 0.68, 1);
+  }
+
+  /* Modal Content/Box */
+  .modal-content {
+    background-color: color(bg,3);
+    margin: 15px auto;
+    padding: 20px;
+    border: none;
+    transition: all 0.3s cubic-bezier(0.33, 1, 0.68, 1);
+    width: 90%; /* Could be more or less, depending on screen size */
+  }
+  .modal-content textarea{
+    max-height: 30vh;
+  }
+  .modal-title{
+    color: color(typography,2);
+    padding-bottom: 15px;
+    border-bottom: 1px solid color(typography, 3);
+  }
+  .modal-body{
+    color: color(typography,1);
+  }
+
+  /* The Close Button */
+  .close {
+    color: color(typography,2);
+    float: right;
+    font-size: font__scale(desktop);
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: color(typography,1);
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  @include media( '>medium' ) {
+    .modal-content {
+      width: 60%;
+    }
+    .modal-content textarea{
+      max-height: 100%;
+    }
+  }

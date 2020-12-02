@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Sahitya Upmanyu - Web Developer Portfolio</title>
+
+    <!-- Header stylesheets -->
+    <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:400,600" rel="stylesheet">
+    <link rel="stylesheet" href="dist/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="icon" href="./src/images/favicon.ico" />
+    <!-- Header Scripts -->
+	<script src="https://unpkg.com/animejs@3.0.1/lib/anime.min.js"></script>
+    <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
+</head>
+<body class="is-boxed has-animations">
+    <div class="body-wrap">
+        <main>
+            <!-- The Modal -->
+            <div id="myModal" class="modal">
+            
+                <!-- Modal content -->
+                <div class="modal-content text-center" id="modalContent">
+                  <span class="close">&times;</span>
+                  <h5 class="modal-title"><i class="fas fa-address-card"></i> Get In Touch</h5>
+                  <div class="modal-body">
+                      <form name="contact" action="https://formspree.io/f/xleowzkr" method="POST" netlify>
+                          <div class="form-group">
+                            <label class="label">Email Address:</label>
+                            <input class="input" name="EmailAddress" placeholder="Your Email Address" type="email" id="contactEmail" required autofocus=""/>
+                          </div>
+                          <div class="form-group">
+                            <label class="label">Message:</label>
+                            <textarea class="textarea" name="Message" maxlength="1000" rows="10" placeholder="Please enter your message here (Upto 1000 characters)" required autofocus=""></textarea>
+                          </div>
+                          <button type="submit" class="button button-warning button-wide-mobile">Send Message</button>
+                      </form>
+                  </div>
+                </div>
+            
+            </div>
+            <section class="hero">
+                <div class="container h-100">
+                    <div class="hero-inner">
+						<div class="hero-copy">
+                            <img class="img-rounded hero-img" src="./src/images/sahitya.jpg" />
+                            <p class="hero-paragraph mb-0">Hello There! I'm Sahitya Upmanyu, a</p>
+	                        <h1 class="hero-title mt-0 mb-0">Full Stack Developer</h1>
+	                        <p class="hero-paragraph">Helping businesses connect to the cloud, one website at a time.</p>
+	                        <div class="hero-cta"><a class="button button-primary button-shadow button-block" href="javascript:void(0)" id="myBtn">Get in touch</a></div>
+						</div>
+						<div class="hero-figure anime-element">
+							<svg class="placeholder" width="528" height="396" viewBox="0 0 528 396">
+								<rect width="528" height="396" style="fill:transparent;" />
+							</svg>
+							<div class="hero-figure-box hero-figure-box-01" data-rotation="45deg"></div>
+							<div class="hero-figure-box hero-figure-box-02" data-rotation="-45deg"></div>
+							<div class="hero-figure-box hero-figure-box-03" data-rotation="0deg"></div>
+							<div class="hero-figure-box hero-figure-box-04" data-rotation="-135deg"></div>
+							<div class="hero-figure-box hero-figure-box-05" style="display: flex;align-items:center;justify-content:center;">
+                                <i class="fas fa-laptop-code fa-9x"></i>
+                            </div>
+							<div class="hero-figure-box hero-figure-box-06"></div>
+							<div class="hero-figure-box hero-figure-box-07"></div>
+							<div class="hero-figure-box hero-figure-box-08" data-rotation="-22deg"></div>
+							<div class="hero-figure-box hero-figure-box-09" data-rotation="-52deg"></div>
+							<div class="hero-figure-box hero-figure-box-10" data-rotation="-50deg"></div>
+						</div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="features section">
+                <div class="container">
+					<div class="features-inner section-inner has-bottom-divider has-top-divider">
+                        <div class="pricing-header text-center">
+                            <h2 class="section-title mb-0">Skills</h2>
+                        </div>
+                        <div class="features-wrap">
+                            <div class="feature pricing-table-inner text-center is-revealing">
+                                <div class="feature-inner">
+                                    <div class="feature-icon">
+										<i class="fab fa-3x fa-html5" style="color: #F16529;"></i>
+                                    </div>
+                                    <h4 class="feature-title mt-24">HTML5</h4>
+                                    <p class="text-sm mb-0">HTML5 is the latest evolution of the standard that defines HTML. It is a new version of the language HTML, with new elements, attributes, and behaviors, and a larger set of technologies that allows the building of more diverse and powerful Web sites and applications.</p>
+                                </div>
+                            </div>
+							<div class="feature pricing-table-inner text-center is-revealing">
+                                <div class="feature-inner">
+                                    <div class="feature-icon">
+										<i class="fab fa-3x fa-css3-alt" style="color:#2965f1"></i>
+                                    </div>
+                                    <h4 class="feature-title mt-24">CSS3</h4>
+                                    <p class="text-sm mb-0">CSS3 is the new kid in the stylesheet family. It offers exciting new possibilities to create an impact with your designs, allows you to use more diverse style sheets for a variety of devices and screen sizes.</p>
+                                </div>
+                            </div>
+                            <div class="feature pricing-table-inner text-center is-revealing">
+                                <div class="feature-inner">
+                                    <div class="feature-icon">
+										<i class="fab fa-3x fa-js-square" style="color: #F0DB4F;"></i>
+                                    </div>
+                                    <h4 class="feature-title mt-24">Javascript (ES5+)</h4>
+                                    <p class="text-sm mb-0">ECMAScript 2015 or ES2015 is a significant update to JavaScript programming language. It is the first major update to the language since ES5 which was standardized in 2009. Therefore, ES2015 is often called ES6.</p>
+                                </div>
+                            </div>
+                            <div class="feature pricing-table-inner text-center is-revealing">
+                                <div class="feature-inner">
+                                    <div class="feature-icon">
+										<i class="fab fa-3x fa-python"></i>
+                                    </div>
+                                    <h4 class="feature-title mt-24">Python</h4>
+                                    <p class="text-sm mb-0">Python is an interpreted, high-level, general-purpose programming language. Python's design philosophy emphasizes code readability. Its language constructs and object-oriented approach aim to help programmers write clear, logical code for small and large-scale projects.</p>
+                                </div>
+                            </div>
+							<div class="feature pricing-table-inner text-center is-revealing">
+                                <div class="feature-inner">
+                                    <div class="feature-icon">
+										<i class="fab fa-3x fa-react" style="color: #61dbfb;"></i>
+                                    </div>
+                                    <h4 class="feature-title mt-24">React</h4>
+                                    <p class="text-sm mb-0">React is an open-source JavaScript library for building user interfaces. It is maintained by Facebook and a community of individual developers and companies. React can be used as a base in the development of single-page or mobile applications.</p>
+                                </div>
+                            </div>
+                            <div class="feature pricing-table-inner text-center is-revealing">
+                                <div class="feature-inner">
+                                    <div class="feature-icon">
+										<i class="fab fa-3x fa-node-js" style="color: #68A063;"></i>
+                                    </div>
+                                    <h4 class="feature-title mt-24">Node.js</h4>
+                                    <p class="text-sm mb-0">Node.js is an open-source, cross-platform, JavaScript runtime environment that executes JavaScript code outside a web browser.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="pricing section">
+                <div class="container-sm">
+                    <div class="pricing-inner section-inner">
+                        <div class="pricing-header text-center">
+                            <h2 class="section-title mt-0">Certifications</h2>
+                        </div>
+						<div class="pricing-tables-wrap">
+                            <div class="pricing-table">
+                                <div class="pricing-table-inner is-revealing">
+                                    <div class="pricing-table-main">
+                                        <div class="pricing-table-header pb-24">
+                                            <div class="pricing-table-price"><span class="pricing-table-price-currency h2">$</span><span class="pricing-table-price-amount h1">49</span><span class="text-xs">/month</span></div>
+                                        </div>
+										<div class="pricing-table-features-title text-xs pt-24 pb-24">What you will get</div>
+                                        <ul class="pricing-table-features list-reset text-xs">
+                                            <li>
+                                                <span>Lorem ipsum dolor sit nisi</span>
+                                            </li>
+                                            <li>
+                                                <span>Lorem ipsum dolor sit nisi</span>
+                                            </li>
+                                            <li>
+                                                <span>Lorem ipsum dolor sit nisi</span>
+                                            </li>
+											<li>
+												<span>Lorem ipsum dolor sit nisi</span>
+											</li>
+                                        </ul>
+                                    </div>
+                                    <div class="pricing-table-cta mb-8">
+                                        <a class="button button-primary button-shadow button-block" href="#">Pre order now</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+
+        <footer class="site-footer">
+            <div class="container">
+                <div class="site-footer-inner">
+                    <div class="footer-brand">Made with &nbsp;<i title="Coffee!" class="fas fa-coffee" style="color: orange;"></i>&nbsp;&&nbsp;<i title="Love!" class="fas fa-heart" style="color: red;"></i></div>
+                    <ul class="footer-links list-reset">
+                        <li>
+                            <a href="#">Contact</a>
+                        </li>
+                        <li>
+                            <a href="#">About us</a>
+                        </li>
+                        <li>
+                            <a href="#">FAQ's</a>
+                        </li>
+                        <li>
+                            <a href="#">Support</a>
+                        </li>
+                    </ul>
+                    <ul class="footer-social-links list-reset">
+                        <li>
+                            <a href="https://www.linkedin.com/in/sahitya-upmanyu-71a18b102/" target="_blank">
+                                <span class="screen-reader-text">Linkedin</span>
+                                <i class="fab fa-2x fa-linkedin"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://github.com/supmanyu" target="_blank">
+                                <span class="screen-reader-text">Github</span>
+                                <i class="fab fa-2x fa-github"></i>
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="footer-copyright">&copy; 2020 Sahitya Upmanyu</div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <!-- Footer Scripts -->
+    <script src="dist/js/main.min.js"></script>
+    <script>
+        // Get the modal
+        var modal = document.getElementById("myModal");
+        var body = document.getElementsByTagName('body')[0];
+        var modalConten = document.getElementById('modalContent');
+        // Get the button that opens the modal
+        var btn = document.getElementById("myBtn");
+
+        // Get the <span> element that closes the modal
+        var span = document.getElementsByClassName("close")[0];
+        
+        // When the user clicks on the button, open the modal
+        btn.onclick = function() {
+            body.classList.add('modal-open');
+            modal.style.display = "block";
+            modalContent.classList.remove('animate__animated','animate__zoomOut', 'animate__faster');
+            modalContent.classList.add('animate__animated','animate__fadeInDown', 'animate__faster');
+            setTimeout(function(){
+                modal.style.opacity = "1";  
+            },100);
+            modal.classList.add('show');
+        }
+
+        // When the user clicks on <span> (x), close the modal
+        span.onclick = function() {
+            modalContent.classList.remove('animate__animated','animate__fadeInDown', 'animate__fast');
+            modalContent.classList.add('animate__animated','animate__zoomOut', 'animate__fast');
+        
+            setTimeout(function(){
+                modal.style.display = "none";
+                modal.classList.remove('show');  
+                body.classList.remove('modal-open');
+            },250)
+        }
+
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function(event) {
+          if (event.target == modal) {
+            modalContent.classList.remove('animate__animated','animate__fadeInDown', 'animate__faster');
+            modalContent.classList.add('animate__animated','animate__zoomOut', 'animate__faster');
+            setTimeout(function(){
+                body.classList.remove('modal-open');
+                modal.style.display = "none";
+            },250)
+          }
+        }
+    </script>
+</body>
+</html>
