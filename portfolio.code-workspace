@@ -1,16 +1,8 @@
 {
-<<<<<<< HEAD
 	"folders": [
 		{
 			"path": "."
 		}
 	],
 	"settings": {}
-=======
-    "folders": [
-        {
-            "path": "../portfolio"
-        }
-    ]
->>>>>>> c5876ca4d35a0125a588ac6a1a8b907bd5e686d3
 }
