@@ -167,7 +167,6 @@ $RECYCLE.BIN/
 *.lnk
 
 
-dist/
 package.json
 package-lock.json
 *.json
