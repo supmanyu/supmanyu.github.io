@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 form{
     text-align: start;
 }
@@ -13,10 +14,16 @@ form > .button{
 .input,
 .textarea {
     background-color: color(bg, 1);
+=======
+.input,
+.textarea {
+    background-color: color(typography, 1);
+>>>>>>> c5876ca4d35a0125a588ac6a1a8b907bd5e686d3
     border-width: 1px;
     border-style: solid;
     border-color: color(bg, 3);
 	border-radius: 2px;
+<<<<<<< HEAD
     color: color(typography, 1);
     max-width: 100%;
     margin-top: 10px;
@@ -24,6 +31,14 @@ form > .button{
     padding: 15px 15px;
     &::placeholder {
         color: color(typography, 2);
+=======
+    color: color(typography, 2);
+    max-width: 100%;
+    width: 100%;
+
+    &::placeholder {
+        color: color(typography, 3);
+>>>>>>> c5876ca4d35a0125a588ac6a1a8b907bd5e686d3
     }
 
     &::-ms-input-placeholder {
@@ -35,13 +50,21 @@ form > .button{
     }
 
     &:hover {
+<<<<<<< HEAD
         border-color: lighten(color(bg, 3), 15%);
+=======
+        border-color: darken(color(bg, 3), 5%);
+>>>>>>> c5876ca4d35a0125a588ac6a1a8b907bd5e686d3
     }
 
     &:active,
     &:focus {
         outline: none;
+<<<<<<< HEAD
         border-color: lighten(color(bg, 3), 25%);
+=======
+        border-color: color(bg, 3);
+>>>>>>> c5876ca4d35a0125a588ac6a1a8b907bd5e686d3
     }
 
     &[disabled] {
@@ -64,19 +87,34 @@ form > .button{
     padding: 13px 16px;
 	height: 48px;
     box-shadow: none;
+<<<<<<< HEAD
     background-color: color(bg,1);
     .inline-input {
         display: inline;
+=======
+
+    .inline-input {
+        display: inline;
+        width: auto;
+>>>>>>> c5876ca4d35a0125a588ac6a1a8b907bd5e686d3
     }
 }
 
 .textarea {
     display: block;
     min-width: 100%;
+<<<<<<< HEAD
     resize: none;
 
     .inline-textarea {
         display: inline;
+=======
+    resize: vertical;
+
+    .inline-textarea {
+        display: inline;
+        width: auto;
+>>>>>>> c5876ca4d35a0125a588ac6a1a8b907bd5e686d3
     }
 }
 

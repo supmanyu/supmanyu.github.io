@@ -20,9 +20,15 @@
 	height: 48px;
     text-align: center;
     white-space: nowrap;
+<<<<<<< HEAD
     transition: all 0.5s ease 0.5s;
 	&:hover {
 		background: color(bg, 3);
+=======
+
+	&:hover {
+		background: lighten(color(bg, 3), 1%);
+>>>>>>> c5876ca4d35a0125a588ac6a1a8b907bd5e686d3
 	}
 
     &:active {
@@ -45,6 +51,7 @@
 
     &:hover {
 		background: lighten(mix(color(primary, 1), color(primary, 2)), 2%);
+<<<<<<< HEAD
         background: linear-gradient(65deg, lighten(color(primary, 1), 2%) 0, lighten(color(primary, 3), 2%) 100%);
     }
 }
@@ -56,6 +63,9 @@
     &:hover {
 		background: darken(mix(color(warning, 1), color(warning, 2)), 10%);
         background: linear-gradient(65deg, darken(color(warning, 1), 10%) 0, darken(color(warning, 2), 10%) 100%);
+=======
+        background: linear-gradient(65deg, lighten(color(primary, 1), 2%) 0, lighten(color(primary, 2), 2%) 100%);
+>>>>>>> c5876ca4d35a0125a588ac6a1a8b907bd5e686d3
     }
 }
 
@@ -69,6 +79,10 @@
 }
 
 @include media( '<=medium' ) {
+<<<<<<< HEAD
+=======
+
+>>>>>>> c5876ca4d35a0125a588ac6a1a8b907bd5e686d3
 	.button-wide-mobile {
 		width: 100%;
 		max-width: 280px;

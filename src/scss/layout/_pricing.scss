@@ -54,7 +54,11 @@
     flex-wrap: wrap;
     background: color(bg, 4);
     padding: 24px;
+<<<<<<< HEAD
 	min-height: 100%;
+=======
+    height: 100%;
+>>>>>>> c5876ca4d35a0125a588ac6a1a8b907bd5e686d3
 
     > * {
 		position: relative; /* To display all elements above the box with shadow */

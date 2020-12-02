@@ -1,10 +1,14 @@
+<<<<<<< HEAD
 # This file is for unifying the coding style for different editors and IDEs
+=======
+>>>>>>> c5876ca4d35a0125a588ac6a1a8b907bd5e686d3
 # editorconfig.org
 
 root = true
 
 [*]
 charset = utf-8
+<<<<<<< HEAD
 end_of_line = lf
 insert_final_newline = true
 trim_trailing_whitespace = true
@@ -18,3 +22,12 @@ indent_size = 2
 
 [*.txt]
 end_of_line = crlf
+=======
+indent_size = 2
+indent_style = space
+insert_final_newline = true
+trim_trailing_whitespace = true
+
+[*.md]
+trim_trailing_whitespace = false
+>>>>>>> c5876ca4d35a0125a588ac6a1a8b907bd5e686d3
