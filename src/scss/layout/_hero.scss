@@ -268,3 +268,19 @@
 		}
 	}
 }
+
+.hero-link > span{
+	display: grid;
+	place-items: center;
+	margin: 0.5rem auto;
+}
+.hero-link a{
+	text-decoration: none;
+	color: #EE4540;
+	transition: all 0.2s ease;
+}
+
+.hero-link a:hover{
+	color: #ff6a65;
+	transform: translateY(-1px);
+}

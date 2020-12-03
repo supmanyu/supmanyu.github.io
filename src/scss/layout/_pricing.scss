@@ -23,10 +23,7 @@
     padding: 12px;
     width: 368px;
     max-width: 368px;
-    flex-grow: 1;
-
 	&::before {
-		content: '';
 		position: absolute;
 		left: 50%;
 		width: 200%;
@@ -38,11 +35,9 @@
 		bottom: 18.8%;
 		-webkit-transform: translateX(-50%);
 		transform: translateX(-50%);
-		background-image: url('../images/pricing-illustration.svg');
 	}
 }
-
-.pricing-table-header,
+.pricing-table-main,
 .pricing-table-features-title,
 .pricing-table-features li {
 	border-bottom: 1px solid rgba(color(typography, 2), .24);
@@ -106,8 +101,19 @@
 }
 
 .pricing-table-cta {
-    align-self: flex-end;
+	align-self: flex-end;
+	margin-top: 5px;
 }
+
+.pricing{
+	background-color: color(bg, 1);
+}
+
+.pricing-img{
+	margin-bottom: 1rem;
+}
+
+
 
 @include media( '>medium' ) {
 

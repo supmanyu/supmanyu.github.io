@@ -1,7 +1,7 @@
 .features-wrap {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: center;
     margin-right: -32px;
     margin-left: -32px;
 
@@ -16,7 +16,8 @@
 
 .feature {
     padding: 16px 32px;
-    width: 380px;
+    width: 340px;
+    margin: 10px;
     max-width: 380px;
     flex-grow: 1;
 }
