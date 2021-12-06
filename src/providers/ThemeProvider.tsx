@@ -9,7 +9,7 @@ type ThemeState = {
 type ThemeProviderProps = { children: React.ReactNode };
 
 export const ThemeContext = createContext<ThemeState>({
-  theme: 'light',
+  theme: 'dark',
   setTheme: () => {},
 });
 

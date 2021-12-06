@@ -17,10 +17,7 @@ const Skills = () => {
         </Thumbnail>
         <Details theme={theme}>
           <h1>More about me</h1>
-          <p>
-            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-            industry’s standard dummy.
-          </p>
+          <p>A developer, deployer and tester of all things web and mobile.</p>
           <Link href="#contact" passHref>
             <Button as="a">Hire me</Button>
           </Link>

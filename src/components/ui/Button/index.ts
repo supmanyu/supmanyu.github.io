@@ -17,10 +17,15 @@ const Button = styled.button<ButtonProps>`
   -ms-user-select: none;
   user-select: none;
   color: #fff;
-  background: #0074d9;
+  background: #5d55d2;
+  transition: all 250ms ease;
 
   &:focus {
     outline: none;
+  }
+
+  &:hover {
+    background: rgba(93, 85, 210, 0.8);
   }
 
   &:disabled {
@@ -30,7 +35,10 @@ const Button = styled.button<ButtonProps>`
   ${({ secondary }) =>
     secondary &&
     `
-		background: #001F3F;
+		background: #95b6f0;
+		&:hover {
+			background: rgba(149, 182, 240, 0.8);
+		}
 	`}
 `;
 

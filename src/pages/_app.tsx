@@ -24,11 +24,11 @@ const MyApp = ({ Component, pageProps, err }: AppProps & { err: any }) => {
 
   return (
     <>
-      <Script
+      {/* <Script
         strategy="afterInteractive"
         src={`https://www.googletagmanager.com/gtag/js?id=${config.googleAnalyticsID}`}
-      ></Script>
-      <Script
+      ></Script> */}
+      {/* <Script
         strategy="afterInteractive"
         dangerouslySetInnerHTML={{
           __html: `
@@ -40,7 +40,7 @@ const MyApp = ({ Component, pageProps, err }: AppProps & { err: any }) => {
 						});
 					`,
         }}
-      />
+      /> */}
       <ThemeProvider>
         <DefaultSeo
           {...SEO}
