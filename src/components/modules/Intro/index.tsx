@@ -16,9 +16,9 @@ const Intro = () => {
       <IntroWrapper as={Container}>
         <Details theme={theme}>
           <h1>Hello There!</h1>
-          <h2>I’m Sahitya, a JAMStack engineer</h2>
+          <h2>I’m Sahitya Upmanyu, a software developer</h2>
           <Link href="#contact" passHref>
-            <Button as="a">Say hi</Button>
+            <Button as="a">Say Hi</Button>
           </Link>
         </Details>
         <Thumbnail>

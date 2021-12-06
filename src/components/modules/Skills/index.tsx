@@ -19,7 +19,7 @@ const Skills = () => {
           <h1>More about me</h1>
           <p>A developer, deployer and tester of all things web and mobile.</p>
           <Link href="#contact" passHref>
-            <Button as="a">Hire me</Button>
+            <Button as="a">Drop by and say Hi</Button>
           </Link>
         </Details>
       </SkillsWrapper>

@@ -6,11 +6,10 @@ type WrapperProps = {
 
 export const Wrapper = styled.div<WrapperProps>`
   a {
-    color: #000;
+    color: #fff;
     text-decoration: none;
 
     @media (max-width: 960px) {
-      color: ${({ theme }) => (theme === 'light' ? '#000' : '#fff')};
     }
   }
 

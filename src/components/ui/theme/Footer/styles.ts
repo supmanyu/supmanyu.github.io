@@ -30,13 +30,11 @@ export const Links = styled.div`
 
   a {
     margin: 0 0.5rem;
-
     img {
       margin: 0;
     }
 
-    &:first-child,
-    &:last-child {
+    &:first-child {
       margin: 0;
     }
   }
