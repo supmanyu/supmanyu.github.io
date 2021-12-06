@@ -8,7 +8,7 @@ export const Wrapper = styled.div`
   background-repeat: no-repeat;
 
   @media (max-width: 1960px) {
-    padding: 14rem 0 4rem;
+    padding: 18rem 0 4rem;
   }
 `;
 
@@ -44,7 +44,7 @@ export const Details = styled.div`
   h2,
   a,
   span {
-    color: #212121;
+    color: #fff;
   }
 
   @media (max-width: 680px) {
