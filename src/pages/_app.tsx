@@ -1,10 +1,10 @@
-import Script from 'next/script';
+// import Script from 'next/script';
 import { useRouter } from 'next/router';
 import { useEffect } from 'react';
 import { AppProps } from 'next/app';
 import { DefaultSeo } from 'next-seo';
 import ThemeProvider from 'providers/ThemeProvider';
-import config from 'data/config';
+// import config from 'data/config';
 import SEO from 'data/next-seo.config';
 import 'components/ui/fonts.css';
 

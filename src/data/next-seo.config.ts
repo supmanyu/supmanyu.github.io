@@ -1,6 +1,6 @@
 export default {
-  title: 'John Doe',
-  description: 'I’m Sahitya and I’m a JAMstack engineer!',
+  title: 'Sahitya Upmanyu',
+  description: 'I’m Sahitya, a software developer',
   openGraph: {
     type: 'website',
     locale: 'en_US',
