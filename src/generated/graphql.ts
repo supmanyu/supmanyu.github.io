@@ -1,11 +1,7 @@
 export type Maybe<T> = T | null;
-export type Exact<T extends { [key: string]: unknown }> = {
-  [K in keyof T]: T[K];
-};
-export type MakeOptional<T, K extends keyof T> = Omit<T, K> &
-  { [SubKey in K]?: Maybe<T[SubKey]> };
-export type MakeMaybe<T, K extends keyof T> = Omit<T, K> &
-  { [SubKey in K]: Maybe<T[SubKey]> };
+export type Exact<T extends { [key: string]: unknown }> = { [K in keyof T]: T[K] };
+export type MakeOptional<T, K extends keyof T> = Omit<T, K> & { [SubKey in K]?: Maybe<T[SubKey]> };
+export type MakeMaybe<T, K extends keyof T> = Omit<T, K> & { [SubKey in K]: Maybe<T[SubKey]> };
 /** All built-in and custom scalars, mapped to their actual values */
 export type Scalars = {
   ID: string;
@@ -2812,9 +2808,7 @@ export type CreatedIssueContributionEdge = {
 };
 
 /** Represents either a issue the viewer can access or a restricted contribution. */
-export type CreatedIssueOrRestrictedContribution =
-  | CreatedIssueContribution
-  | RestrictedContribution;
+export type CreatedIssueOrRestrictedContribution = CreatedIssueContribution | RestrictedContribution;
 
 /** Represents the contribution a user made on GitHub by opening a pull request. */
 export type CreatedPullRequestContribution = Contribution & {
@@ -2860,9 +2854,7 @@ export type CreatedPullRequestContributionEdge = {
 };
 
 /** Represents either a pull request the viewer can access or a restricted contribution. */
-export type CreatedPullRequestOrRestrictedContribution =
-  | CreatedPullRequestContribution
-  | RestrictedContribution;
+export type CreatedPullRequestOrRestrictedContribution = CreatedPullRequestContribution | RestrictedContribution;
 
 /** Represents the contribution a user made by leaving a review on a pull request. */
 export type CreatedPullRequestReviewContribution = Contribution & {
@@ -2955,9 +2947,7 @@ export type CreatedRepositoryContributionEdge = {
 };
 
 /** Represents either a repository the viewer can access or a restricted contribution. */
-export type CreatedRepositoryOrRestrictedContribution =
-  | CreatedRepositoryContribution
-  | RestrictedContribution;
+export type CreatedRepositoryOrRestrictedContribution = CreatedRepositoryContribution | RestrictedContribution;
 
 /** Represents a mention made by one issue or pull request to another. */
 export type CrossReferencedEvent = Node &
@@ -9192,9 +9182,7 @@ export type OrgRemoveOutsideCollaboratorAuditEntry = Node &
     createdAt: Scalars['PreciseDateTime'];
     id: Scalars['ID'];
     /** The types of membership the outside collaborator has with the organization. */
-    membershipTypes?: Maybe<
-      Array<OrgRemoveOutsideCollaboratorAuditEntryMembershipType>
-    >;
+    membershipTypes?: Maybe<Array<OrgRemoveOutsideCollaboratorAuditEntryMembershipType>>;
     /** The corresponding operation type for the action */
     operationType?: Maybe<OperationType>;
     /** The Organization associated with the Audit Entry. */
@@ -15849,14 +15837,7 @@ export enum SavedReplyOrderField {
 }
 
 /** The results of a search. */
-export type SearchResultItem =
-  | App
-  | Issue
-  | MarketplaceListing
-  | Organization
-  | PullRequest
-  | Repository
-  | User;
+export type SearchResultItem = App | Issue | MarketplaceListing | Organization | PullRequest | Repository | User;
 
 /** A list of results that matched against a search query. */
 export type SearchResultItemConnection = {
