@@ -56,7 +56,9 @@ export const getStaticProps = async () => {
   });
   console.log(res.data.data.viewer.repositories.edges);
 
-  const repos: RepositoryEdge[] = res.data.data.viewer.repositories.edges;
+  const repos: RepositoryEdge[] = res.data.data.viewer.repositories.edges.filter(
+    (repo: { node: { forkCount: number } }) => repo.node.forkCount > 0,
+  );
 
   return {
     props: {
